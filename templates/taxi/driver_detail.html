@@ -1,8 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
   <h1>License_number: {{ driver.license_number }}</h1>
-  <p>Manufacturer: {{ car.manufacturer }}</p>
-  <h3>Drivers:</h3>
+  <h3>Cars:</h3>
   {% for car in driver.cars.all %}
   	<p>{{ car.id }} - {{ car.model }}</p>
     <hr>
